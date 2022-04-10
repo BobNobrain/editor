@@ -1,5 +1,5 @@
-import { NodeDataSupremum } from '../types';
-import { DocumentEditor } from '../../editor/types';
+import { NodeDataSupremum } from '../../document/types';
+import { DocumentEditor } from '../types';
 
 export interface PatchCreatorArg {
     /** Target node id */

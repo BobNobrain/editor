@@ -1,5 +1,10 @@
 {
     "include": ["src"],
+    "exclude": [
+        "**/tests/**",
+        "**/*.test.ts",
+        "**/*.spec.ts"
+    ],
     "compilerOptions": {
         "strict": true,
         "noImplicitAny": true,

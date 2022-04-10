@@ -53,5 +53,16 @@ describe('getDeepestCommonRoot', () => {
         expect(getDeepestCommonRoot([6, 2, 7, 4], parentIds)).toBe(2);
     });
 
-    it('returns NaN when there is no common root', () => {});
+    it('returns NaN when there is no common root', () => {
+        const parentIds: Record<number, number> = {
+            1: 0,
+            2: 0,
+            4: 3,
+            5: 3,
+            6: 3,
+            7: 3,
+        };
+
+        expect(getDeepestCommonRoot([1, 5], parentIds)).toBe(NaN);
+    });
 });
