@@ -4,7 +4,7 @@
   "description": "Rich text editor core",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "rm -rf dist && tsc -p tsconfig.release.json",
     "dev": "webpack serve -c dev/webpack.config.js --mode development",
     "test": "jest"
   },

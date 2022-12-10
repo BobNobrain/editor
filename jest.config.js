@@ -2,7 +2,7 @@ module.exports = {
     collectCoverage: true,
     coverageDirectory: 'coverage',
     testMatch: [
-      '**/tests/**/*.[jt]s',
+      '**/tests/**/*.(spec|test).[jt]s',
       '**/?(*.)+(spec|test).[tj]s',
     ],
     testPathIgnorePatterns: [
